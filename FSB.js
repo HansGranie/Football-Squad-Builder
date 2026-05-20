@@ -76,7 +76,7 @@ const gk_list = [{
 }] 
 
 const flags = {
-    "Spain" : "Spain.jpg"
+    "Spain" : "https://flagsapi.com/ES/flat/64.png"
 }
 
 const badges = {
