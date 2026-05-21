@@ -57,6 +57,7 @@ function Input_Player(sel_player) {
     console.log("Działa")
     const select = document.getElementById("gk")
     select.textContent = sel_player
+    list.style.display="none";
 }
 
 const gk_list = [{
