@@ -7,7 +7,7 @@ function Assign_Player() {
         list.style.display="flex";
         list.innerHTML = ""
         for (let i = 0; i < gk_list.length; i++) { 
-            var sel_gk = gk_list[i]
+            let sel_gk = gk_list[i]
             const square = document.createElement("div");
             square.classList.add("select")
             list.appendChild(square) 
@@ -44,11 +44,8 @@ function Assign_Player() {
                 stat.appendChild(text)
                 text.textContent = sel_gk[stats_gk[i]]
             }
-            square.addEventListener("click", () => {
-
-            gk.textContent = sel_gk.name;
-
-            list.style.display = "none";})
+            square.setAttribute("id", sel_gk.name)
+            square.addEventListener("click", () => {Input_Player(square.id);})
         }
     }
     else {
@@ -56,7 +53,10 @@ function Assign_Player() {
     }
 }
 
-function Input_Player(sel_player, in_player) {
+function Input_Player(sel_player) {
+    console.log("Działa")
+    const select = document.getElementById("gk")
+    select.textContent = sel_player
 }
 
 const gk_list = [{
