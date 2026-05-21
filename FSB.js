@@ -7,7 +7,7 @@ function Assign_Player() {
         list.style.display="flex";
         list.innerHTML = ""
         for (let i = 0; i < gk_list.length; i++) { 
-            let sel_gk = gk_list[i]
+            var sel_gk = gk_list[i]
             const square = document.createElement("div");
             square.classList.add("select")
             list.appendChild(square) 
@@ -44,12 +44,20 @@ function Assign_Player() {
                 stat.appendChild(text)
                 text.textContent = sel_gk[stats_gk[i]]
             }
+            square.addEventListener("click", () => {
+
+            gk.textContent = sel_gk.name;
+
+            list.style.display = "none";})
         }
     }
     else {
         list.style.display="none";
     }
-}    
+}
+
+function Input_Player(sel_player, in_player) {
+}
 
 const gk_list = [{
     name: "David Raya",
