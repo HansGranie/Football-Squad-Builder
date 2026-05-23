@@ -55,7 +55,7 @@ function Assign_Player() {
 
 function Input_Player(sel_player) {
     console.log("Działa")
-    const label = document.createElement("h1")
+    const label = document.getElementById("gk_name")
     label.textContent = sel_player
     const select = document.getElementById("gk")
     select.appendChild(label)
