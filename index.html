@@ -20,14 +20,17 @@
             }
 
             .player_box {
-                height:8vh;
-                width:8vh;
+                height:10vh;
+                width:10vh;
                 margin-top:5vh;
                 font-family:Verdana, Courier, sans-serif;
-                font-size:2vh;
+                font-size:1vh;
                 color:white;
                 font-weight:bold;
-                text-align:center;
+                display:flex;
+                flex-direction:column;
+                justify-content:center;
+                align-items:center;
             }
 
             .player_circle {
@@ -136,6 +139,13 @@
                 justify-content:center;
                 align-items:center;
             }
+
+            h1 {
+                height:1vh;
+                margin:0;
+                text-align:center;
+                white-space:nowrap;
+            }
         </style>
     </head>
     <body>
@@ -157,10 +167,9 @@
             <div class="player_box"><div class="player_circle"></div></div>
             </div>
             <div class="row">
-            <div id="gk" class="player_box"><div id="gk_click" class="player_circle"><h1 id="gk_name"></h1></div></div>
-            </div>
+            <div id="gk" class="player_box"><div id="gk_click" class="player_circle"></div><h1 id="gk_name"></h1></div>
         </div>
-        <div id="list"></div>
+        <div id="list" style="display:none;"></div>
         <script src="FSB.js"></script>
     </body>
 </html>
