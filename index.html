@@ -20,11 +20,21 @@
             }
 
             .player_box {
-                background-color:rgb(187, 186, 186);
                 height:8vh;
                 width:8vh;
                 margin-top:5vh;
+                font-family:Verdana, Courier, sans-serif;
+                font-size:2vh;
+                color:white;
+                font-weight:bold;
+                text-align:center;
+            }
+
+            .player_circle {
+                background-color:rgb(187, 186, 186);
                 border-radius:50%;
+                height:8vh;
+                width:8vh;
             }
 
             .row {
@@ -34,13 +44,13 @@
             }
 
             @media (hover:hover) {
-                .player_box:hover {
+                .player_circle:hover {
                     opacity:0.9;
                     background-color:rgb(233, 230, 230);
                 }
             }
 
-            .player_box:active {
+            .player_circle:active {
                 opacity:0.9;
                 background-color:rgb(233, 230, 230);
             }
@@ -131,23 +141,23 @@
     <body>
         <div class="pitch">
             <div class="row">
-            <div class="player_box"></div>
-            <div class="player_box"></div>
-            <div class="player_box"></div>
+            <div class="player_box"><div class="player_circle"></div></div>
+            <div class="player_box"><div class="player_circle"></div></div>
+            <div class="player_box"><div class="player_circle"></div></div>
             </div>
             <div class="row">
-            <div class="player_box"></div>
-            <div class="player_box"></div>
-            <div class="player_box"></div>
+            <div class="player_box"><div class="player_circle"></div></div>
+            <div class="player_box"><div class="player_circle"></div></div>
+            <div class="player_box"><div class="player_circle"></div></div>
             </div>
             <div class="row">
-            <div class="player_box"></div>
-            <div class="player_box"></div>
-            <div class="player_box"></div>
-            <div class="player_box"></div>
+            <div class="player_box"><div class="player_circle"></div></div>
+            <div class="player_box"><div class="player_circle"></div></div>
+            <div class="player_box"><div class="player_circle"></div></div>
+            <div class="player_box"><div class="player_circle"></div></div>
             </div>
             <div class="row">
-            <div id="gk" class="player_box"></div>
+            <div id="gk" class="player_box"><div id="gk_click" class="player_circle"></div></div>
             </div>
         </div>
         <div id="list"></div>

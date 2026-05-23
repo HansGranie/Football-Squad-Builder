@@ -1,4 +1,4 @@
-const gk = document.getElementById("gk")
+const gk = document.getElementById("gk_click")
 const list = document.getElementById("list")
 gk.addEventListener("click", Assign_Player)
 
@@ -55,8 +55,10 @@ function Assign_Player() {
 
 function Input_Player(sel_player) {
     console.log("Działa")
+    const label = document.createElement("h1")
+    label.textContent = sel_player
     const select = document.getElementById("gk")
-    select.textContent = sel_player
+    select.appendChild(label)
     list.style.display="none";
 }
 
