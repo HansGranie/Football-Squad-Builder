@@ -77,7 +77,6 @@ const gk_list = [{
     name: "Joan Garcia",
     nation: "Spain",
     club: "FC Barcelona",
-    image: "https://img.a.transfermarkt.technology/portrait/header/561613-1747386081.jpg?lm=1",
     "div": 81, 
     "han": 82,
     "kic": 77,
